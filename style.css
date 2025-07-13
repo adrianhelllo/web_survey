@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* || variables */
+
+:root {
+    --PAGE-BG-COLOR: rgb(240, 236, 252);
+    --SECTION-BG-COLOR: rgb(255, 251, 251);
+    --ACCENT-COLOR: rgb(114, 17, 204);
+    --SHADOW-COLOR: rgba(0, 0, 0, 0.05)
+}
+
+/* ||| MISC. STYLING */
+
+/* || reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--PAGE-BG-COLOR);
+}
+
+body {
+    padding: 0.75rem 1.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+/* || header styles */
+
+header {
+    background-color: var(--SECTION-BG-COLOR);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px var(--SHADOW-COLOR);
+    border-top: 10px solid var(--ACCENT-COLOR);
+}
+
+.survey-title {
+    font-size: 1.3rem;
+    font-weight: 450;
+    margin-bottom: 1rem 0;
+}
+
+.survey-description {
+    font-size: 0.6em;
+    margin: 1rem 0;
+}
+
+/* ||| FORM STLYING */

@@ -1,0 +1,10 @@
+-- contact info --
+email
+name
+-- misc. --
+do you like this site? 1-10
+what were you doing before filling out this survey? text
+am i cool and awesome? y / n
+enter a number from 1 - 100 inclusive here: num
+what's your favorite flavour(s)? multiple choice
+please let me know about your experience with this survey. textarea
