@@ -116,3 +116,7 @@ option {
     align-items: center;
 }
 
+fieldset input[type="number"] {
+    font-size: 0.7rem;
+}
+
