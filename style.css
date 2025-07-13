@@ -61,6 +61,10 @@ fieldset {
     border-radius: var(--BORDER-RAD);
 }
 
+fieldset p {
+    margin: 0.5rem 0;
+}
+
 fieldset .legend {
     background-color: var(--LEGEND-BG-COLOR);
     padding: 0.5rem;
@@ -71,6 +75,7 @@ fieldset .legend {
 }
 
 fieldset input, fieldset label {
+    background-color: var(--SECTION-BG-COLOR);
     display: block;
     margin: 0.5rem 0;
     border: none
@@ -85,5 +90,29 @@ fieldset input {
 
 fieldset input:focus {
     border-bottom: 2px solid var(--ACCENT-COLOR)
+}
+
+select {
+    transition: all 0.1s ease-in-out;
+    font-size: 0.55rem;
+    background-color: var(--SECTION-BG-COLOR);
+    border: none;
+    border-radius: 0.1rem;
+}
+
+select:focus {
+    border: none;
+    border-bottom: 1px solid var(--ACCENT-COLOR);
+}
+
+option {
+    margin: 0.1rem;
+}
+
+.radio {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 0.25rem;
+    align-items: center;
 }
 
