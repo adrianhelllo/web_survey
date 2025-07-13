@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My totally awesome Survey!</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-        <header>
-            <h1 class="survey-title">
-                Welcome to my survey.
-            </h1>
-            <p class="survey-description">In this survey, you will be asked about several things, relating to all sorts of things.</p>
-            <p class="survey-description">Also, this is not Google Surveys.</p>
-        </header>
-        <form action="" method="post">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <p>
-                    <label for="email">Please enter your email below:</label>
-                    <input type="email" id="email" name="email" required autofocus autocomplete="off">
-                </p>
-                <p>
-                    <label for="name">Please enter your name below:</label>
-                    <input type="text" name="name" id="name" required autocomplete="off">
-                </p>
-            </fieldset>
-        </form>
+      <header>
+        <h1 class="survey-title">Welcome to my survey.</h1>
+        <p class="survey-description">
+          In this survey, you will be asked about several things, relating to
+          all sorts of things.
+        </p>
+        <p class="survey-description">Also, this is not Google Surveys.</p>
+      </header>
+      <form action="" method="post">
+        <fieldset>
+          <h2 class="legend">Contact Information</h2>
+          <p>
+            <label for="email">Please enter your email below:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autofocus
+              autocomplete="off"
+            />
+          </p>
+          <p>
+            <label for="name">Please enter your name below:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              autocomplete="off"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <h2 class="legend">Survey Questions</h2>
+          <label for="rate">Rate this website on a scale of 1 to 10:</label>
+          <select name="rate" id="rate" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </fieldset>
+      </form>
     </main>
-</body>
+  </body>
 </html>

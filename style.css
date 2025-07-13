@@ -5,7 +5,9 @@
     --PAGE-BG-COLOR: rgb(240, 236, 252);
     --SECTION-BG-COLOR: rgb(255, 251, 251);
     --ACCENT-COLOR: rgb(114, 17, 204);
-    --SHADOW-COLOR: rgba(0, 0, 0, 0.05)
+    --SHADOW-COLOR: rgba(0, 0, 0, 0.05);
+    --LEGEND-BG-COLOR: rgb(238, 236, 241);
+    --BORDER-RAD: 0.5rem;
 }
 
 /* ||| MISC. STYLING */
@@ -32,7 +34,7 @@ body {
 header {
     background-color: var(--SECTION-BG-COLOR);
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: var(--BORDER-RAD);
     box-shadow: 0 0 5px var(--SHADOW-COLOR);
     border-top: 10px solid var(--ACCENT-COLOR);
 }
@@ -44,8 +46,44 @@ header {
 }
 
 .survey-description {
-    font-size: 0.6em;
+    font-size: 0.6rem;
     margin: 1rem 0;
 }
 
 /* ||| FORM STLYING */
+
+fieldset {
+    margin: 0.75rem 0;
+    font-size: 0.6rem;
+    border: none;
+    padding: 1rem;
+    background-color: var(--SECTION-BG-COLOR);
+    border-radius: var(--BORDER-RAD);
+}
+
+fieldset .legend {
+    background-color: var(--LEGEND-BG-COLOR);
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: normal;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+}
+
+fieldset input, fieldset label {
+    display: block;
+    margin: 0.5rem 0;
+    border: none
+}
+
+fieldset input {
+    transition: all 0.1s ease-in-out;
+    border-bottom: 1px dotted gray;
+    outline: none;
+    font-size: 0.55rem;
+}
+
+fieldset input:focus {
+    border-bottom: 2px solid var(--ACCENT-COLOR)
+}
+
