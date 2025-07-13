@@ -109,7 +109,7 @@ option {
     margin: 0.1rem;
 }
 
-.radio {
+.radio, .check {
     display: flex;
     flex-flow: row nowrap;
     column-gap: 0.25rem;
@@ -120,3 +120,42 @@ fieldset input[type="number"] {
     font-size: 0.7rem;
 }
 
+textarea {
+    font-family: "Inter", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 300;
+    resize: none;
+    height: 2ch;
+    border: none;
+    border-bottom: 1px dashed gray;
+    transition: all 0.1s ease-in-out;
+}
+
+textarea:focus {
+    outline: 2px solid var(--ACCENT-COLOR);
+    border: none;
+    height: 10ch;
+}
+
+/* || buttons */
+
+.button-container button {
+    padding: 0.4rem 1rem;
+    background-color: var(--SECTION-BG-COLOR);
+    color: var(--ACCENT-COLOR);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.6rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.button-container :is(button:hover, button:focus) {
+    background-color: var(--ACCENT-COLOR);
+    color: var(--SECTION-BG-COLOR);
+}
+
+.button-container {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}

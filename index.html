@@ -98,11 +98,41 @@
         </fieldset>
         <fieldset>
           <p>What is your favorite flavour? You can select multiple choices.</p>
-          <p>
+          <p class="check">
             <input type="checkbox" id="sweet" name="flavour" value="sweet" />
             <label for="sweet">Sweet</label>
           </p>
+          <p class="check">
+            <input type="checkbox" id="salty" name="flavour" value="salty" />
+            <label for="salty">Salty</label>
+          </p>
+          <p class="check">
+            <input type="checkbox" id="sour" name="flavour" value="sour" />
+            <label for="sour">Sour</label>
+          </p>
+          <p class="check">
+            <input type="checkbox" id="bitter" name="flavour" value="bitter" />
+            <label for="bitter">Bitter</label>
+          </p>
+          <p class="check">
+            <input type="checkbox" id="spicy" name="flavour" value="spicy" />
+            <label for="spicy">Spicy</label>
+          </p>
+          <p class="check">
+            <input type="checkbox" id="umami" name="flavour" value="umami" />
+            <label for="umami">Umami</label>
+          </p>
         </fieldset>
+        <fieldset>
+            <h2 class="legend">Send me a note</h2>
+            <label for="experience">How was your experience with this form / survey? Please let me know!</label>
+            <textarea name="experience" id="experience" cols="40"
+            rows="2" required></textarea>
+        </fieldset>
+        <div class="button-container">
+            <button type="submit" formaction="" formmethod="post">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
       </form>
     </main>
   </body>
