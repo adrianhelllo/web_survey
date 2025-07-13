@@ -5,18 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My totally awesome Survey!</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "m2whEgspBnw_Gmn7m",
-        });
-      })();
-    </script>
-    <script src="script.js"></script>
   </head>
   <body>
     <main>
@@ -28,7 +16,7 @@
         </p>
         <p class="survey-description">Also, this is not Google Forms.</p>
       </header>
-      <form action="" method="post">
+      <form action="https://formsubmit.co/hetessyadrian@gmail.com" method="POST">
         <fieldset>
           <h2 class="legend">Contact Information</h2>
           <p>
@@ -151,7 +139,7 @@
           ></textarea>
         </fieldset>
         <div class="button-container">
-          <button type="submit" formaction="" onclick="sendMail()">Submit</button>
+          <button type="submit">Submit</button>
           <button type="reset">Reset</button>
         </div>
       </form>
