@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My totally awesome Survey!</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "m2whEgspBnw_Gmn7m",
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
   </head>
   <body>
     <main>
@@ -87,6 +99,7 @@
             <label for="number">Please enter a number from 1 to 100:</label>
             <input
               type="number"
+              id="number"
               name="number"
               value="1"
               min="1"
@@ -124,14 +137,22 @@
           </p>
         </fieldset>
         <fieldset>
-            <h2 class="legend">Send me a note</h2>
-            <label for="experience">How was your experience with this form / survey? Please let me know!</label>
-            <textarea name="experience" id="experience" cols="40"
-            rows="2" required></textarea>
+          <h2 class="legend">Send me a note</h2>
+          <label for="experience"
+            >How was your experience with this form / survey? Please let me
+            know!</label
+          >
+          <textarea
+            name="experience"
+            id="experience"
+            cols="40"
+            rows="2"
+            required
+          ></textarea>
         </fieldset>
         <div class="button-container">
-            <button type="submit" formaction="" formmethod="post">Submit</button>
-            <button type="reset">Reset</button>
+          <button type="submit" formaction="" onclick="sendMail()">Submit</button>
+          <button type="reset">Reset</button>
         </div>
       </form>
     </main>
